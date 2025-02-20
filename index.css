@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.5s ease-in-out;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, grey, skyblue);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.8em;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav button {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background: white;
+    color: black;
+}
+
+/* Active Button Style */
+nav button.active {
+    background: #adfff882;
+    color: white;
+    font-weight: bold;
+}
+
+/* Section Styling */
+section {
+    min-height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* When section is visible */
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Alternate background colors */
+#home { background: #adfff882; }
+#about { background: #ffd6a5; }
+#projects { background: #fdffb6; }
+#contact { background: #caffbf; }
+
+/* Footer */
+footer {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 15px;
+    position: relative;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        padding: 5px 0;
+    }
+
+    nav button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
